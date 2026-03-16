@@ -2,7 +2,7 @@ import React from 'react';
 
 const Link = ({route}) => {
 
-    console.log(route);
+    // console.log(route);
     
     return (
         <li key={route.id}>
