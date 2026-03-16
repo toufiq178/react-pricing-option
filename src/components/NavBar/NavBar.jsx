@@ -42,19 +42,19 @@ const NavBar = () => {
 
 
 
-    const link = navigationData.map(route => <Link route={route}></Link>)
+    const link = navigationData.map((route , index) => <Link key={index} route={route}></Link>)
     
-    
+
 
 
 
 
 
     return (
-        <div className='flex justify-between items-center mx-5 py-3'>
+        <div className='flex justify-between items-center border-b-1 border-b-amber-600  py-2'>
 
 
-            <div className='flex  gap-4'>
+            <div className='flex  gap-4 ml-4'>
 
                 <div onClick={() => setOpen(!open)}  className='lg:hidden'>
 
@@ -65,7 +65,13 @@ const NavBar = () => {
                 </div>
 
 
-                { open ? <ul className='block'>{link}</ul> :<ul className='hidden'>{link}</ul>}
+                <ul className={`lg:hidden block absolute duration-700 border-none rounded-4xl ${open ? 'top-12' : '-top-60'} `}>
+                    {
+                        link
+                    }
+                </ul>
+
+                {/* { open ? <ul className='block'>{link}</ul> :<ul className='hidden'>{link}</ul>} */}
 
                 <h1 className='font-bold text-xl'>NavBar</h1>
             </div>
@@ -88,7 +94,7 @@ const NavBar = () => {
                 <li><a href="/blogs">blogs</a></li>
                 <li><a href="/contact">contact</a></li>
             </ul> */}
-            <button className='bg-black p-3 rounded-lg  '>Sign in</button>
+            <button className='bg-amber-600 py-2 hover:bg-amber-700 px-4 rounded-lg mr-5 '>Sign in</button>
         </div>
     );
 };

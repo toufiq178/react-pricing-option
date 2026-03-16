@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Basic Membership",
+    "price": "$20.99/Month",
+    "information": "Ideal for beginners who want access to gym equipment",
+    "features": [
+      "Access to all gym equipment",
+      "1 personal training session per month",
+      "Locker room access",
+      "Community classes (limited)"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Standard Membership",
+    "price": "$40.99/Month",
+    "information": "Perfect for regular gym-goers who want more benefits",
+    "features": [
+      "Access to all gym equipment",
+      "4 personal training sessions per month",
+      "Unlimited group classes",
+      "Locker room access with towel service",
+      "Nutrition consultation"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Premium Membership",
+    "price": "$70.99/Month",
+    "information": "For fitness enthusiasts who want full access and perks",
+    "features": [
+      "Access to all gym equipment 24/7",
+      "8 personal training sessions per month",
+      "Unlimited group classes",
+      "Locker room & sauna access",
+      "Nutrition and fitness plan",
+      "Priority support",
+      "Guest pass for friends"
+    ]
+  }
+]
