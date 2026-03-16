@@ -51,7 +51,7 @@ const NavBar = () => {
 
 
     return (
-        <div className='flex justify-between items-center border-b-1 border-b-amber-600  py-2'>
+        <div className='flex justify-between items-center border-b-1 border-warning  py-2'>
 
 
             <div className='flex  gap-4 ml-4'>
@@ -94,7 +94,7 @@ const NavBar = () => {
                 <li><a href="/blogs">blogs</a></li>
                 <li><a href="/contact">contact</a></li>
             </ul> */}
-            <button className='bg-amber-600 py-2 hover:bg-amber-700 px-4 rounded-lg mr-5 '>Sign in</button>
+            <button className="btn btn-warning mr-4">Sign in</button>
         </div>
     );
 };

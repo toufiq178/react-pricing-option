@@ -15,6 +15,7 @@
     "id": 2,
     "name": "Standard Membership",
     "price": "$40.99/Month",
+    "popular": true ,
     "information": "Perfect for regular gym-goers who want more benefits",
     "features": [
       "Access to all gym equipment",
