@@ -1,5 +1,5 @@
 import React from 'react';
-import { Line, LineChart } from 'recharts';
+import { AreaChart, Line, LineChart, XAxis, YAxis, Area, Tooltip, CartesianGrid, BarChart, Bar, RadialBarChart, RadialBar } from 'recharts';
 
 
 const studentData = [
@@ -50,7 +50,27 @@ const ResultsCart = () => {
                 <Line dataKey={"chemistry"} stroke='yellow'></Line>
             </LineChart>
 
+            <AreaChart style={{ width: '100%', maxWidth: '400px', maxHeight: '40vh', aspectRatio: 1.618 }} data={studentData}>
 
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey={"name"}  ></XAxis>
+                <YAxis dataKey={"math"}  ></YAxis>
+                <Tooltip />
+                <Area dataKey="physics" stroke="#8884d8" fill="#8884d8"></Area>
+
+            </AreaChart>
+
+            <BarChart style={{ width: '100%', maxWidth: '300px', maxHeight: '70vh', aspectRatio: 1.618 }} data={studentData}>
+                
+                <XAxis dataKey="name" />
+                <YAxis width="auto" />
+                <Bar dataKey={"math"} fill='#8884d8'/>
+            </BarChart >
+
+            <RadialBarChart  style={{ width: '100%', maxWidth: '700px', maxHeight: '80vh', aspectRatio: 1.618 }} data={studentData}>
+
+                <RadialBar label={{ position: 'insideStart', fill: '#fff' }} background dataKey="math"/>
+            </RadialBarChart>
         </div>
     );
 };
